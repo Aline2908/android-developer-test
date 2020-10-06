@@ -2,15 +2,17 @@ package com.ram.android_developer_test.ui.carpark.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
 import com.ram.android_developer_test.R
 import com.ram.android_developer_test.ui.carpark.fragment.CarParkFragment
+import com.ram.android_developer_test.ui.carpark.fragment.CarParkFragmentDirections
 import com.ram.android_developer_test.ui.carpark.fragment.CarParkRegisterFragment
 import com.ram.android_developer_test.ui.carpark.fragment.CarParkRegistryFragment
 
 class CarParkActivity: AppCompatActivity(),
     CarParkFragment.CarParkListener,
-    CarParkRegistryFragment.CarParkRegistry,
-    CarParkRegisterFragment.CarParkRegister{
+    CarParkRegistryFragment.CarParkRegistryListener,
+    CarParkRegisterFragment.CarParkRegisterListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +20,6 @@ class CarParkActivity: AppCompatActivity(),
     }
 
     override fun onChooseOption() {
-        TODO("Not yet implemented")
     }
 
     override fun onChooseEnterOrExit() {
@@ -29,3 +30,4 @@ class CarParkActivity: AppCompatActivity(),
         TODO("Not yet implemented")
     }
 }
+

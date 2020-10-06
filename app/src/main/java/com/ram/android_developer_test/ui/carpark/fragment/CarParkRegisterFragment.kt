@@ -1,5 +1,6 @@
 package com.ram.android_developer_test.ui.carpark.fragment
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,13 @@ import com.ram.android_developer_test.databinding.FragmentRegisterBinding
 class CarParkRegisterFragment: Fragment() {
 
     lateinit var binding: FragmentRegisterBinding
+
+    private var listener: CarParkRegisterListener? = null
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        listener = context as? CarParkRegisterListener
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -24,7 +32,7 @@ class CarParkRegisterFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
     }
 
-    interface CarParkRegister {
+    interface CarParkRegisterListener {
         fun onDoRegister()
     }
 }

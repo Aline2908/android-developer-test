@@ -20,10 +20,12 @@
         android:id="@+id/carParkRegisterFragment"
         android:name="com.ram.android_developer_test.ui.carpark.fragment.CarParkRegisterFragment"
         android:label="CarParkRegisterFragment"
-        tools:layout="@layout/fragment_register"/>
+        tools:layout="@layout/fragment_register">
+    </fragment>
     <fragment
         android:id="@+id/carParkRegistryFragment"
         android:name="com.ram.android_developer_test.ui.carpark.fragment.CarParkRegistryFragment"
         android:label="CarParkRegistryFragment"
-        tools:layout="@layout/fragment_registry"/>
+        tools:layout="@layout/fragment_registry">
+    </fragment>
 </navigation>
