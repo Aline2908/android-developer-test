@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">android-developer-test</string>
+    <string name="app_name">CarPark</string>
+    <string name="carpark_registry">Entrada y \nSalida</string>
+    <string name="carpark_register">Alta de \nvehículos</string>
+    <string name="carpark_month">Comienzo de \nmes</string>
+    <string name="carpark_pay">Pago de \nresidentes</string>
+    <string name="registry_title">Registro de \nEntrada y Salida</string>
+    <string name="registry_plate">Placa</string>
+    <string-array name="registry_option">
+        <item>Registro de entrada</item>
+        <item>Registro de salida</item>
+    </string-array>
+    <string name="register_title">Alta de vehículos</string>
+    <string-array name="register_option">
+        <item>Vehículo oficial</item>
+        <item>Vehículo de residente</item>
+    </string-array>
 </resources>
