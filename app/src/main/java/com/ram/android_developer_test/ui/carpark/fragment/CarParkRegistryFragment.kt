@@ -23,4 +23,8 @@ class CarParkRegistryFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
     }
+
+    interface CarParkRegistry {
+        fun onChooseEnterOrExit()
+    }
 }
