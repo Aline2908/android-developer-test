@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/carParkFragment">
+    <fragment
+        android:id="@+id/carParkFragment"
+        android:name="com.ram.android_developer_test.ui.carpark.fragment.CarParkFragment"
+        android:label="CarParkFragment"
+        tools:layout="@layout/fragment_carpark">
+        <action
+            android:id="@+id/action_carParkFragment_to_carParkRegisterFragment"
+            app:destination="@id/carParkRegisterFragment" />
+        <action
+            android:id="@+id/action_carParkFragment_to_carParkRegistryFragment"
+            app:destination="@id/carParkRegistryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/carParkRegisterFragment"
+        android:name="com.ram.android_developer_test.ui.carpark.fragment.CarParkRegisterFragment"
+        android:label="CarParkRegisterFragment"
+        tools:layout="@layout/fragment_register"/>
+    <fragment
+        android:id="@+id/carParkRegistryFragment"
+        android:name="com.ram.android_developer_test.ui.carpark.fragment.CarParkRegistryFragment"
+        android:label="CarParkRegistryFragment"
+        tools:layout="@layout/fragment_registry"/>
+</navigation>

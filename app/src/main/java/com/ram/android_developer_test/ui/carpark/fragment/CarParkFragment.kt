@@ -5,18 +5,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.ram.android_developer_test.databinding.FragmentRegistryBinding
+import com.ram.android_developer_test.databinding.FragmentCarparkBinding
 
-class CarParkRegistryFragment: Fragment() {
+class CarParkFragment: Fragment() {
 
-    lateinit var binding: FragmentRegistryBinding
+    lateinit var binding: FragmentCarparkBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentRegistryBinding.inflate(inflater)
+        binding = FragmentCarparkBinding.inflate(inflater)
         return binding.root
     }
 
