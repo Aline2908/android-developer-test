@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment
 import com.ram.android_developer_test.R
 import com.ram.android_developer_test.databinding.FragmentRegistryBinding
 
-class CarParkRegistryFragment: Fragment(), AdapterView.OnItemSelectedListener {
+class CarParkRegistryFragment : Fragment(), AdapterView.OnItemSelectedListener {
 
     lateinit var binding: FragmentRegistryBinding
 

@@ -11,6 +11,10 @@
         <item>Registro de salida</item>
     </string-array>
     <string name="register_title">Alta de vehículos</string>
+    <string name="pay_title">Pago de Residentes</string>
+    <string name="pay_plate">No. de \nPlaca</string>
+    <string name="pay_time">Tiempo \nestacionado (min)</string>
+    <string name="pay_amount_pay">Cantidad a \npagar</string>
     <string-array name="register_option">
         <item>Vehículo oficial</item>
         <item>Vehículo de residente</item>

@@ -2,17 +2,17 @@ package com.ram.android_developer_test.ui.carpark.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
 import com.ram.android_developer_test.R
 import com.ram.android_developer_test.ui.carpark.fragment.CarParkFragment
-import com.ram.android_developer_test.ui.carpark.fragment.CarParkFragmentDirections
+import com.ram.android_developer_test.ui.carpark.fragment.CarParkPayFragment
 import com.ram.android_developer_test.ui.carpark.fragment.CarParkRegisterFragment
 import com.ram.android_developer_test.ui.carpark.fragment.CarParkRegistryFragment
 
-class CarParkActivity: AppCompatActivity(),
+class CarParkActivity : AppCompatActivity(),
     CarParkFragment.CarParkListener,
     CarParkRegistryFragment.CarParkRegistryListener,
-    CarParkRegisterFragment.CarParkRegisterListener {
+    CarParkRegisterFragment.CarParkRegisterListener,
+    CarParkPayFragment.CarParkPayListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

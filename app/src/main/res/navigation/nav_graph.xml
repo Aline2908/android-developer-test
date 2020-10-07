@@ -15,6 +15,9 @@
         <action
             android:id="@+id/action_carParkFragment_to_carParkRegistryFragment"
             app:destination="@id/carParkRegistryFragment" />
+        <action
+            android:id="@+id/action_carParkFragment_to_carParkPayFragment"
+            app:destination="@id/carParkPayFragment" />
     </fragment>
     <fragment
         android:id="@+id/carParkRegisterFragment"
@@ -28,4 +31,9 @@
         android:label="CarParkRegistryFragment"
         tools:layout="@layout/fragment_registry">
     </fragment>
+    <fragment
+        android:id="@+id/carParkPayFragment"
+        android:name="com.ram.android_developer_test.ui.carpark.fragment.CarParkPayFragment"
+        android:label="CarParkPayFragment"
+        tools:layout="@layout/fragment_pay"/>
 </navigation>

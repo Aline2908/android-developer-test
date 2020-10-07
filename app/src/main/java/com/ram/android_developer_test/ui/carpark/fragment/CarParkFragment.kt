@@ -9,10 +9,8 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.ram.android_developer_test.R
 import com.ram.android_developer_test.databinding.FragmentCarparkBinding
-import com.ram.android_developer_test.ui.carpark.activity.CarParkActivity
-import kotlinx.android.synthetic.main.fragment_carpark.*
 
-class CarParkFragment: Fragment() {
+class CarParkFragment : Fragment() {
 
     lateinit var binding: FragmentCarparkBinding
 
@@ -44,6 +42,9 @@ class CarParkFragment: Fragment() {
             }
             buttonRegister.setOnClickListener { v ->
                 findNavController().navigate(R.id.carParkRegisterFragment)
+            }
+            buttonPay.setOnClickListener { v ->
+                findNavController().navigate(R.id.carParkPayFragment)
             }
         }
     }
