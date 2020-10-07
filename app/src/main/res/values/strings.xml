@@ -14,5 +14,6 @@
     <string-array name="register_option">
         <item>Vehículo oficial</item>
         <item>Vehículo de residente</item>
+        <item>Vehículo No residente</item>
     </string-array>
 </resources>
