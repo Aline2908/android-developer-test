@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.ram.android_developer_test.R
 import com.ram.android_developer_test.databinding.FragmentCarparkBinding
+import dagger.android.support.AndroidSupportInjection
 
 class CarParkFragment : Fragment() {
 
@@ -18,6 +19,7 @@ class CarParkFragment : Fragment() {
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
+        AndroidSupportInjection.inject(this)
         listener = context as? CarParkListener
     }
 

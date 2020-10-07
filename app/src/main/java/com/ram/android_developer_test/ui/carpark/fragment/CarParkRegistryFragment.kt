@@ -11,6 +11,9 @@ import android.widget.Spinner
 import androidx.fragment.app.Fragment
 import com.ram.android_developer_test.R
 import com.ram.android_developer_test.databinding.FragmentRegistryBinding
+import com.ram.android_developer_test.ui.carpark.viewmodel.CarParkViewModel
+import dagger.android.support.AndroidSupportInjection
+import javax.inject.Inject
 
 class CarParkRegistryFragment : Fragment(), AdapterView.OnItemSelectedListener {
 
@@ -18,8 +21,12 @@ class CarParkRegistryFragment : Fragment(), AdapterView.OnItemSelectedListener {
 
     private var listener: CarParkRegistryListener? = null
 
+    @Inject
+    lateinit var viewModel: CarParkViewModel
+
     override fun onAttach(context: Context) {
         super.onAttach(context)
+        AndroidSupportInjection.inject(this)
         listener = context as? CarParkRegistryListener
     }
 
