@@ -15,9 +15,13 @@
     <string name="pay_plate">No. de \nPlaca</string>
     <string name="pay_time">Tiempo \nestacionado (min)</string>
     <string name="pay_amount_pay">Cantidad a \npagar</string>
+    <string name="register_button">Registrar</string>
+    <string name="register_oficial_car">Vehículo oficial</string>
+    <string name="register_car_resident">Vehículo de residente</string>
+    <string name="register_car_no_resident">Vehículo No residente</string>
     <string-array name="register_option">
-        <item>Vehículo oficial</item>
-        <item>Vehículo de residente</item>
-        <item>Vehículo No residente</item>
+        <item>@string/register_oficial_car</item>
+        <item>@string/register_car_resident</item>
+        <item>@string/register_car_no_resident</item>
     </string-array>
 </resources>
